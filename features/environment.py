@@ -8,6 +8,8 @@ import logging
 
 import requests
 
+import json
+
 from config.config import BASE_URL, HEADERS
 from utils.logger import get_logger
 from utils.rest_client import RestClient
@@ -44,25 +46,28 @@ def before_scenario(context, scenario):
     LOGGER.debug("Scenario tags: %s", scenario.tags)
 
     if "project_id" in scenario.tags:
-
         response = create_project(context=context, name_project="project x")
         context.project_id = response["body"]["id"]
         LOGGER.debug("Project id created: %s", context.project_id)
         context.project_list.append(context.project_id)
 
     if "section_id" in scenario.tags:
-
         response = create_section(context=context, project_id=context.project_id_from_all, section_name="section x")
         context.section_id = response["body"]["id"]
         LOGGER.debug("Section id created: %s", context.section_id)
         context.section_list.append(context.section_id)
 
     if "task_id" in scenario.tags:
-
         response = create_task(context=context, task_name="task x")
         context.task_id = response["body"]["id"]
         LOGGER.debug("Task id created: %s", context.task_id)
         context.section_list.append(context.task_id)
+
+    if "comment_id" in scenario.tags:
+        response = create_comment(context=context, project_id=context.project_id)
+        context.comment_id = response["body"]["id"]
+        LOGGER.debug("Comment id created: %s", context.comment_id)
+        context.section_list.append(context.comment_id)
 
 
 def after_scenario(context, scenario):
@@ -83,37 +88,49 @@ def after_all(context):
 
 
 def create_project(context, name_project):
-
     body_project = {
         "name": name_project
     }
     response = RestClient().send_request(method_name="post", session=context.session,
-                                         url=context.url+"projects", headers=context.headers,
+                                         url=context.url + "projects", headers=context.headers,
                                          data=body_project)
     return response
 
 
 def create_section(context, project_id, section_name):
-
     body_section = {
         "project_id": project_id,
         "name": section_name
     }
     response = RestClient().send_request(method_name="post", session=context.session,
-                                         url=context.url+"sections", headers=context.headers,
+                                         url=context.url + "sections", headers=context.headers,
                                          data=body_section)
     return response
 
 
 def create_task(context, task_name):
-
     body_section = {
         "content": task_name
     }
     response = RestClient().send_request(method_name="post", session=context.session,
-                                         url=context.url+"tasks", headers=context.headers,
+                                         url=context.url + "tasks", headers=context.headers,
                                          data=body_section)
     return response
+
+
+def create_comment(context, project_id):
+    data = {
+        "project_id": project_id,
+        "content": "NEW COMMENT CREATED"
+    }
+    # file_path = "utils/note.json"
+    # with open(file_path, 'w') as json_file:
+    #     json.dump(data, json_file, indent=4)
+    response = RestClient().send_request(method_name="post", session=context.session,
+                                         url=context.url + "comments", headers=context.headers,
+                                         data=data)
+    return response
+
 
 def get_all_projects(context):
     response = RestClient().send_request(method_name="get", session=context.session,

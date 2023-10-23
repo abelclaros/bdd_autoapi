@@ -72,6 +72,24 @@ def step_call_endpoint(context, feature, method_name, param):
     context.method = method_name
 
 
+@step('I create a new comment on a existing project')
+def step_create_comment(context):
+    url = context.url + "comments"
+    data = {
+        "project_id": context.project_id,
+        "content": "NEW COMMENT IN PROJECT"
+    }
+    response = RestClient().send_request(method_name="post",
+                                         session=context.session,
+                                         url=url,
+                                         headers=context.headers,
+                                         data=data)
+    LOGGER.debug("Response: %s", response)
+    append_to_resources_list(context, response)
+    context.response = response
+    context.method = "post"
+
+
 # UTILS AS METHODS
 def get_url_by_feature(context):
     feature_id = None
