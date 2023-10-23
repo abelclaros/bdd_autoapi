@@ -1,0 +1,372 @@
+2023-10-22 01:42:57,466 UTC DEBUG    builtins        Headers before feature: {'Authorization': 'Bearer 3bb828df7836d71da0e9fdd090f6d0f66130044b'}
+2023-10-22 01:42:57,466 UTC INFO     utils.rest_client Method Name: get
+2023-10-22 01:42:57,466 UTC INFO     utils.rest_client Endpoint (URL): https://api.todoist.com/rest/v2/projects
+2023-10-22 01:42:58,973 UTC INFO     utils.rest_client Status code: 200
+2023-10-22 01:42:58,973 UTC DEBUG    utils.rest_client Request: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer 3bb828df7836d71da0e9fdd090f6d0f66130044b'}
+2023-10-22 01:42:58,973 UTC INFO     utils.rest_client Response: [
+	{
+		"id": "2319576038",
+		"parent_id": null,
+		"order": 0,
+		"color": "charcoal",
+		"name": "Inbox",
+		"comment_count": 0,
+		"is_shared": false,
+		"is_favorite": false,
+		"is_inbox_project": true,
+		"is_team_inbox": false,
+		"url": "https://todoist.com/showProject?id=2319576038",
+		"view_style": "list"
+	},
+	{
+		"id": "2322258579",
+		"parent_id": null,
+		"order": 1,
+		"color": "charcoal",
+		"name": "PROJECT 1",
+		"comment_count": 0,
+		"is_shared": false,
+		"is_favorite": false,
+		"is_inbox_project": false,
+		"is_team_inbox": false,
+		"url": "https://todoist.com/showProject?id=2322258579",
+		"view_style": "list"
+	}
+]
+
+2023-10-22 01:42:58,973 UTC DEBUG    builtins        {'body': [{'id': '2319576038', 'parent_id': None, 'order': 0, 'color': 'charcoal', 'name': 'Inbox', 'comment_count': 0, 'is_shared': False, 'is_favorite': False, 'is_inbox_project': True, 'is_team_inbox': False, 'url': 'https://todoist.com/showProject?id=2319576038', 'view_style': 'list'}, {'id': '2322258579', 'parent_id': None, 'order': 1, 'color': 'charcoal', 'name': 'PROJECT 1', 'comment_count': 0, 'is_shared': False, 'is_favorite': False, 'is_inbox_project': False, 'is_team_inbox': False, 'url': 'https://todoist.com/showProject?id=2322258579', 'view_style': 'list'}], 'headers': {'Content-Type': 'application/json', 'Content-Length': '626', 'Connection': 'keep-alive', 'Date': 'Sun, 22 Oct 2023 05:42:58 GMT', 'Access-Control-Allow-Credentials': 'false', 'Access-Control-Allow-Origin': '*', 'Referrer-Policy': 'strict-origin-when-cross-origin', 'Server': 'gunicorn', 'Set-Cookie': 'csrf=ee6a7c6e4c524af7990db5cbe5bbd19a; Expires=Wed, 19-Oct-2033 05:42:58 GMT; Secure; Path=/; SameSite=None, tduser=v4.public.eyJ1c2VyX2lkIjogNDU2ODE1ODIsICJleHAiOiAiMjAyMy0xMS0wNVQwNTo0Mjo1OCswMDowMCJ95djH46qC--ZF-AoZ3M2MzXnOjaYqOB5oqnPgENNDGfPJhZOdkx9UAav6stubns4GbfmN2qtmp5Xc75B9JmAUCg; Domain=.todoist.com; Expires=Sun, 05-Nov-2023 05:42:58 GMT; Max-Age=1209600; Secure; HttpOnly; Path=/', 'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload', 'Vary': 'Accept-Encoding', 'X-Cache': 'Miss from cloudfront', 'Via': '1.1 b19fb79e44eb13a0a19db64dcbab6bbe.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'SCL51-P4', 'X-Amz-Cf-Id': 'ZTGxcr-5UBfgma3WTnGoyEr6L9VtgCoAjXsRnDWN8y53cEY_kPulCw=='}, 'status': 200}
+2023-10-22 01:42:58,975 UTC DEBUG    builtins        Scenario tags: []
+2023-10-22 01:42:58,975 UTC DEBUG    builtins        HEADERS: {'Authorization': 'Bearer 3bb828df7836d71da0e9fdd090f6d0f66130044b'}
+2023-10-22 01:42:58,975 UTC DEBUG    builtins        URL: https://api.todoist.com/rest/v2/
+2023-10-22 01:42:58,976 UTC INFO     utils.rest_client Method Name: get
+2023-10-22 01:42:58,977 UTC INFO     utils.rest_client Endpoint (URL): https://api.todoist.com/rest/v2/tasks
+2023-10-22 01:42:59,791 UTC INFO     utils.rest_client Status code: 200
+2023-10-22 01:42:59,792 UTC DEBUG    utils.rest_client Request: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer 3bb828df7836d71da0e9fdd090f6d0f66130044b', 'Cookie': 'tduser=v4.public.eyJ1c2VyX2lkIjogNDU2ODE1ODIsICJleHAiOiAiMjAyMy0xMS0wNVQwNTo0Mjo1OCswMDowMCJ95djH46qC--ZF-AoZ3M2MzXnOjaYqOB5oqnPgENNDGfPJhZOdkx9UAav6stubns4GbfmN2qtmp5Xc75B9JmAUCg; csrf=ee6a7c6e4c524af7990db5cbe5bbd19a'}
+2023-10-22 01:42:59,792 UTC INFO     utils.rest_client Response: [
+	{
+		"id": "7338565267",
+		"assigner_id": null,
+		"assignee_id": null,
+		"project_id": "2319576038",
+		"section_id": null,
+		"parent_id": null,
+		"order": 1,
+		"content": "Task 1",
+		"description": "",
+		"is_completed": false,
+		"labels": [],
+		"priority": 1,
+		"comment_count": 1,
+		"creator_id": "45681582",
+		"created_at": "2023-10-22T05:05:45.051040Z",
+		"due": {
+			"date": "2023-10-22",
+			"string": "Oct 22",
+			"lang": "en",
+			"is_recurring": false
+		},
+		"url": "https://todoist.com/showTask?id=7338565267",
+		"duration": null
+	},
+	{
+		"id": "7338567137",
+		"assigner_id": null,
+		"assignee_id": null,
+		"project_id": "2319576038",
+		"section_id": null,
+		"parent_id": null,
+		"order": 2,
+		"content": "Task 2",
+		"description": "",
+		"is_completed": false,
+		"labels": [
+			"Label 1"
+		],
+		"priority": 1,
+		"comment_count": 0,
+		"creator_id": "45681582",
+		"created_at": "2023-10-22T05:08:33.326711Z",
+		"due": null,
+		"url": "https://todoist.com/showTask?id=7338567137",
+		"duration": null
+	},
+	{
+		"id": "7338572305",
+		"assigner_id": null,
+		"assignee_id": null,
+		"project_id": "2319576038",
+		"section_id": null,
+		"parent_id": null,
+		"order": 3,
+		"content": "TASK NEW",
+		"description": "",
+		"is_completed": false,
+		"labels": [],
+		"priority": 1,
+		"comment_count": 0,
+		"creator_id": "45681582",
+		"created_at": "2023-10-22T05:16:21.079503Z",
+		"due": null,
+		"url": "https://todoist.com/showTask?id=7338572305",
+		"duration": null
+	},
+	{
+		"id": "7338573985",
+		"assigner_id": null,
+		"assignee_id": null,
+		"project_id": "2319576038",
+		"section_id": null,
+		"parent_id": null,
+		"order": 4,
+		"content": "TASK NEW",
+		"description": "",
+		"is_completed": false,
+		"labels": [],
+		"priority": 1,
+		"comment_count": 0,
+		"creator_id": "45681582",
+		"created_at": "2023-10-22T05:19:09.590413Z",
+		"due": {
+			"date": "2023-10-23",
+			"string": "tomorrow at 12:00",
+			"lang": "en",
+			"is_recurring": false,
+			"datetime": "2023-10-23T12:00:00"
+		},
+		"url": "https://todoist.com/showTask?id=7338573985",
+		"duration": null
+	},
+	{
+		"id": "7338574515",
+		"assigner_id": null,
+		"assignee_id": null,
+		"project_id": "2319576038",
+		"section_id": null,
+		"parent_id": null,
+		"order": 5,
+		"content": "TASK NEW",
+		"description": "",
+		"is_completed": false,
+		"labels": [],
+		"priority": 1,
+		"comment_count": 0,
+		"creator_id": "45681582",
+		"created_at": "2023-10-22T05:19:59.925636Z",
+		"due": {
+			"date": "2023-10-23",
+			"string": "tomorrow at 12:00",
+			"lang": "en",
+			"is_recurring": false,
+			"datetime": "2023-10-23T12:00:00"
+		},
+		"url": "https://todoist.com/showTask?id=7338574515",
+		"duration": null
+	},
+	{
+		"id": "7338575437",
+		"assigner_id": null,
+		"assignee_id": null,
+		"project_id": "2319576038",
+		"section_id": null,
+		"parent_id": null,
+		"order": 6,
+		"content": "TASK NEW",
+		"description": "",
+		"is_completed": false,
+		"labels": [],
+		"priority": 1,
+		"comment_count": 0,
+		"creator_id": "45681582",
+		"created_at": "2023-10-22T05:21:18.590218Z",
+		"due": {
+			"date": "2023-10-23",
+			"string": "tomorrow at 12:00",
+			"lang": "en",
+			"is_recurring": false,
+			"datetime": "2023-10-23T12:00:00"
+		},
+		"url": "https://todoist.com/showTask?id=7338575437",
+		"duration": null
+	},
+	{
+		"id": "7338577530",
+		"assigner_id": null,
+		"assignee_id": null,
+		"project_id": "2319576038",
+		"section_id": null,
+		"parent_id": null,
+		"order": 7,
+		"content": "TASK NEW",
+		"description": "",
+		"is_completed": false,
+		"labels": [],
+		"priority": 1,
+		"comment_count": 0,
+		"creator_id": "45681582",
+		"created_at": "2023-10-22T05:24:23.081973Z",
+		"due": {
+			"date": "2023-10-23",
+			"string": "tomorrow at 12:00",
+			"lang": "en",
+			"is_recurring": false,
+			"datetime": "2023-10-23T12:00:00"
+		},
+		"url": "https://todoist.com/showTask?id=7338577530",
+		"duration": null
+	},
+	{
+		"id": "7338577709",
+		"assigner_id": null,
+		"assignee_id": null,
+		"project_id": "2319576038",
+		"section_id": null,
+		"parent_id": null,
+		"order": 8,
+		"content": "TASK NEW",
+		"description": "",
+		"is_completed": false,
+		"labels": [],
+		"priority": 1,
+		"comment_count": 0,
+		"creator_id": "45681582",
+		"created_at": "2023-10-22T05:24:42.333987Z",
+		"due": {
+			"date": "2023-10-23",
+			"string": "tomorrow at 12:00",
+			"lang": "en",
+			"is_recurring": false,
+			"datetime": "2023-10-23T12:00:00"
+		},
+		"url": "https://todoist.com/showTask?id=7338577709",
+		"duration": null
+	},
+	{
+		"id": "7338587423",
+		"assigner_id": null,
+		"assignee_id": null,
+		"project_id": "2319576038",
+		"section_id": null,
+		"parent_id": null,
+		"order": 9,
+		"content": "TASK NEW",
+		"description": "",
+		"is_completed": false,
+		"labels": [],
+		"priority": 1,
+		"comment_count": 0,
+		"creator_id": "45681582",
+		"created_at": "2023-10-22T05:37:52.120556Z",
+		"due": {
+			"date": "2023-10-23",
+			"string": "tomorrow at 12:00",
+			"lang": "en",
+			"is_recurring": false,
+			"datetime": "2023-10-23T12:00:00"
+		},
+		"url": "https://todoist.com/showTask?id=7338587423",
+		"duration": null
+	}
+]
+
+2023-10-22 01:42:59,793 UTC DEBUG    builtins        Response: {'body': [{'id': '7338565267', 'assigner_id': None, 'assignee_id': None, 'project_id': '2319576038', 'section_id': None, 'parent_id': None, 'order': 1, 'content': 'Task 1', 'description': '', 'is_completed': False, 'labels': [], 'priority': 1, 'comment_count': 1, 'creator_id': '45681582', 'created_at': '2023-10-22T05:05:45.051040Z', 'due': {'date': '2023-10-22', 'string': 'Oct 22', 'lang': 'en', 'is_recurring': False}, 'url': 'https://todoist.com/showTask?id=7338565267', 'duration': None}, {'id': '7338567137', 'assigner_id': None, 'assignee_id': None, 'project_id': '2319576038', 'section_id': None, 'parent_id': None, 'order': 2, 'content': 'Task 2', 'description': '', 'is_completed': False, 'labels': ['Label 1'], 'priority': 1, 'comment_count': 0, 'creator_id': '45681582', 'created_at': '2023-10-22T05:08:33.326711Z', 'due': None, 'url': 'https://todoist.com/showTask?id=7338567137', 'duration': None}, {'id': '7338572305', 'assigner_id': None, 'assignee_id': None, 'project_id': '2319576038', 'section_id': None, 'parent_id': None, 'order': 3, 'content': 'TASK NEW', 'description': '', 'is_completed': False, 'labels': [], 'priority': 1, 'comment_count': 0, 'creator_id': '45681582', 'created_at': '2023-10-22T05:16:21.079503Z', 'due': None, 'url': 'https://todoist.com/showTask?id=7338572305', 'duration': None}, {'id': '7338573985', 'assigner_id': None, 'assignee_id': None, 'project_id': '2319576038', 'section_id': None, 'parent_id': None, 'order': 4, 'content': 'TASK NEW', 'description': '', 'is_completed': False, 'labels': [], 'priority': 1, 'comment_count': 0, 'creator_id': '45681582', 'created_at': '2023-10-22T05:19:09.590413Z', 'due': {'date': '2023-10-23', 'string': 'tomorrow at 12:00', 'lang': 'en', 'is_recurring': False, 'datetime': '2023-10-23T12:00:00'}, 'url': 'https://todoist.com/showTask?id=7338573985', 'duration': None}, {'id': '7338574515', 'assigner_id': None, 'assignee_id': None, 'project_id': '2319576038', 'section_id': None, 'parent_id': None, 'order': 5, 'content': 'TASK NEW', 'description': '', 'is_completed': False, 'labels': [], 'priority': 1, 'comment_count': 0, 'creator_id': '45681582', 'created_at': '2023-10-22T05:19:59.925636Z', 'due': {'date': '2023-10-23', 'string': 'tomorrow at 12:00', 'lang': 'en', 'is_recurring': False, 'datetime': '2023-10-23T12:00:00'}, 'url': 'https://todoist.com/showTask?id=7338574515', 'duration': None}, {'id': '7338575437', 'assigner_id': None, 'assignee_id': None, 'project_id': '2319576038', 'section_id': None, 'parent_id': None, 'order': 6, 'content': 'TASK NEW', 'description': '', 'is_completed': False, 'labels': [], 'priority': 1, 'comment_count': 0, 'creator_id': '45681582', 'created_at': '2023-10-22T05:21:18.590218Z', 'due': {'date': '2023-10-23', 'string': 'tomorrow at 12:00', 'lang': 'en', 'is_recurring': False, 'datetime': '2023-10-23T12:00:00'}, 'url': 'https://todoist.com/showTask?id=7338575437', 'duration': None}, {'id': '7338577530', 'assigner_id': None, 'assignee_id': None, 'project_id': '2319576038', 'section_id': None, 'parent_id': None, 'order': 7, 'content': 'TASK NEW', 'description': '', 'is_completed': False, 'labels': [], 'priority': 1, 'comment_count': 0, 'creator_id': '45681582', 'created_at': '2023-10-22T05:24:23.081973Z', 'due': {'date': '2023-10-23', 'string': 'tomorrow at 12:00', 'lang': 'en', 'is_recurring': False, 'datetime': '2023-10-23T12:00:00'}, 'url': 'https://todoist.com/showTask?id=7338577530', 'duration': None}, {'id': '7338577709', 'assigner_id': None, 'assignee_id': None, 'project_id': '2319576038', 'section_id': None, 'parent_id': None, 'order': 8, 'content': 'TASK NEW', 'description': '', 'is_completed': False, 'labels': [], 'priority': 1, 'comment_count': 0, 'creator_id': '45681582', 'created_at': '2023-10-22T05:24:42.333987Z', 'due': {'date': '2023-10-23', 'string': 'tomorrow at 12:00', 'lang': 'en', 'is_recurring': False, 'datetime': '2023-10-23T12:00:00'}, 'url': 'https://todoist.com/showTask?id=7338577709', 'duration': None}, {'id': '7338587423', 'assigner_id': None, 'assignee_id': None, 'project_id': '2319576038', 'section_id': None, 'parent_id': None, 'order': 9, 'content': 'TASK NEW', 'description': '', 'is_completed': False, 'labels': [], 'priority': 1, 'comment_count': 0, 'creator_id': '45681582', 'created_at': '2023-10-22T05:37:52.120556Z', 'due': {'date': '2023-10-23', 'string': 'tomorrow at 12:00', 'lang': 'en', 'is_recurring': False, 'datetime': '2023-10-23T12:00:00'}, 'url': 'https://todoist.com/showTask?id=7338587423', 'duration': None}], 'headers': {'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Date': 'Sun, 22 Oct 2023 05:42:59 GMT', 'Access-Control-Allow-Credentials': 'false', 'Access-Control-Allow-Origin': '*', 'Content-Encoding': 'gzip', 'Referrer-Policy': 'strict-origin-when-cross-origin', 'Server': 'gunicorn', 'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload', 'Vary': 'Accept-Encoding', 'X-Cache': 'Miss from cloudfront', 'Via': '1.1 b19fb79e44eb13a0a19db64dcbab6bbe.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'SCL51-P4', 'X-Amz-Cf-Id': 'uYIeS7UeKhdZOFfrK_Bfd4J12CM8cJW_RpxmKwG2kAqiv5GtdZEXJA=='}, 'status': 200}
+2023-10-22 01:42:59,794 UTC DEBUG    builtins        Status code from response: 200
+2023-10-22 01:42:59,794 UTC DEBUG    builtins        Status code param: <class 'int'>
+2023-10-22 01:42:59,795 UTC DEBUG    builtins        Status code response: <class 'int'>
+2023-10-22 01:42:59,795 UTC DEBUG    builtins        Scenario tags: ['project_id']
+2023-10-22 01:42:59,795 UTC INFO     utils.rest_client Method Name: post
+2023-10-22 01:42:59,795 UTC INFO     utils.rest_client Endpoint (URL): https://api.todoist.com/rest/v2/projects
+2023-10-22 01:43:00,532 UTC INFO     utils.rest_client Status code: 200
+2023-10-22 01:43:00,532 UTC DEBUG    utils.rest_client Request: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer 3bb828df7836d71da0e9fdd090f6d0f66130044b', 'Cookie': 'tduser=v4.public.eyJ1c2VyX2lkIjogNDU2ODE1ODIsICJleHAiOiAiMjAyMy0xMS0wNVQwNTo0Mjo1OCswMDowMCJ95djH46qC--ZF-AoZ3M2MzXnOjaYqOB5oqnPgENNDGfPJhZOdkx9UAav6stubns4GbfmN2qtmp5Xc75B9JmAUCg; csrf=ee6a7c6e4c524af7990db5cbe5bbd19a', 'Content-Length': '14', 'Content-Type': 'application/x-www-form-urlencoded'}
+2023-10-22 01:43:00,532 UTC INFO     utils.rest_client Response: {
+	"id": "2322350407",
+	"parent_id": null,
+	"order": 2,
+	"color": "charcoal",
+	"name": "project x",
+	"comment_count": 0,
+	"is_shared": false,
+	"is_favorite": false,
+	"is_inbox_project": false,
+	"is_team_inbox": false,
+	"url": "https://todoist.com/showProject?id=2322350407",
+	"view_style": "list"
+}
+
+2023-10-22 01:43:00,533 UTC DEBUG    builtins        Project id created: 2322350407
+2023-10-22 01:43:00,533 UTC DEBUG    builtins        HEADERS: {'Authorization': 'Bearer 3bb828df7836d71da0e9fdd090f6d0f66130044b'}
+2023-10-22 01:43:00,533 UTC DEBUG    builtins        URL: https://api.todoist.com/rest/v2/
+2023-10-22 01:43:00,534 UTC DEBUG    builtins        JSON: {
+  "content": "TASK NEW",
+  "due_string": "tomorrow at 12:00"
+}
+2023-10-22 01:43:00,534 UTC DEBUG    builtins        Dictionary created: {'content': 'TASK NEW', 'due_string': 'tomorrow at 12:00'}
+2023-10-22 01:43:00,534 UTC INFO     utils.rest_client Method Name: post
+2023-10-22 01:43:00,534 UTC INFO     utils.rest_client Endpoint (URL): https://api.todoist.com/rest/v2/tasks
+2023-10-22 01:43:00,917 UTC INFO     utils.rest_client Status code: 200
+2023-10-22 01:43:00,917 UTC DEBUG    utils.rest_client Request: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer 3bb828df7836d71da0e9fdd090f6d0f66130044b', 'Cookie': 'tduser=v4.public.eyJ1c2VyX2lkIjogNDU2ODE1ODIsICJleHAiOiAiMjAyMy0xMS0wNVQwNTo0Mjo1OCswMDowMCJ95djH46qC--ZF-AoZ3M2MzXnOjaYqOB5oqnPgENNDGfPJhZOdkx9UAav6stubns4GbfmN2qtmp5Xc75B9JmAUCg; csrf=ee6a7c6e4c524af7990db5cbe5bbd19a', 'Content-Length': '47', 'Content-Type': 'application/x-www-form-urlencoded'}
+2023-10-22 01:43:00,917 UTC INFO     utils.rest_client Response: {
+	"id": "7338590967",
+	"assigner_id": null,
+	"assignee_id": null,
+	"project_id": "2319576038",
+	"section_id": null,
+	"parent_id": null,
+	"order": 10,
+	"content": "TASK NEW",
+	"description": "",
+	"is_completed": false,
+	"labels": [],
+	"priority": 1,
+	"comment_count": 0,
+	"creator_id": "45681582",
+	"created_at": "2023-10-22T05:43:00.646641Z",
+	"due": {
+		"date": "2023-10-23",
+		"string": "tomorrow at 12:00",
+		"lang": "en",
+		"is_recurring": false,
+		"datetime": "2023-10-23T12:00:00"
+	},
+	"url": "https://todoist.com/showTask?id=7338590967",
+	"duration": null
+}
+
+2023-10-22 01:43:00,918 UTC DEBUG    builtins        Response: {'body': {'id': '7338590967', 'assigner_id': None, 'assignee_id': None, 'project_id': '2319576038', 'section_id': None, 'parent_id': None, 'order': 10, 'content': 'TASK NEW', 'description': '', 'is_completed': False, 'labels': [], 'priority': 1, 'comment_count': 0, 'creator_id': '45681582', 'created_at': '2023-10-22T05:43:00.646641Z', 'due': {'date': '2023-10-23', 'string': 'tomorrow at 12:00', 'lang': 'en', 'is_recurring': False, 'datetime': '2023-10-23T12:00:00'}, 'url': 'https://todoist.com/showTask?id=7338590967', 'duration': None}, 'headers': {'Content-Type': 'application/json', 'Content-Length': '566', 'Connection': 'keep-alive', 'Date': 'Sun, 22 Oct 2023 05:43:00 GMT', 'Access-Control-Allow-Credentials': 'false', 'Access-Control-Allow-Origin': '*', 'Cache-Control': 'no-cache', 'Referrer-Policy': 'strict-origin-when-cross-origin', 'Server': 'gunicorn', 'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload', 'Vary': 'Accept-Encoding', 'X-Cache': 'Miss from cloudfront', 'Via': '1.1 b19fb79e44eb13a0a19db64dcbab6bbe.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'SCL51-P4', 'X-Amz-Cf-Id': 'UiKqRxYkyypuxE0N9dCJqtzYubtNRIltpOpfxvTDo2veYwoj5JbqVw=='}, 'status': 200}
+2023-10-22 01:43:00,918 UTC DEBUG    builtins        Status code from response: 200
+2023-10-22 01:43:00,918 UTC DEBUG    builtins        Status code param: <class 'int'>
+2023-10-22 01:43:00,919 UTC DEBUG    builtins        Status code response: <class 'int'>
+2023-10-22 01:43:00,919 UTC DEBUG    builtins        Scenario tags: ['project_id']
+2023-10-22 01:43:00,919 UTC INFO     utils.rest_client Method Name: post
+2023-10-22 01:43:00,919 UTC INFO     utils.rest_client Endpoint (URL): https://api.todoist.com/rest/v2/projects
+2023-10-22 01:43:01,839 UTC INFO     utils.rest_client Status code: 200
+2023-10-22 01:43:01,839 UTC DEBUG    utils.rest_client Request: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer 3bb828df7836d71da0e9fdd090f6d0f66130044b', 'Cookie': 'tduser=v4.public.eyJ1c2VyX2lkIjogNDU2ODE1ODIsICJleHAiOiAiMjAyMy0xMS0wNVQwNTo0Mjo1OCswMDowMCJ95djH46qC--ZF-AoZ3M2MzXnOjaYqOB5oqnPgENNDGfPJhZOdkx9UAav6stubns4GbfmN2qtmp5Xc75B9JmAUCg; csrf=ee6a7c6e4c524af7990db5cbe5bbd19a', 'Content-Length': '14', 'Content-Type': 'application/x-www-form-urlencoded'}
+2023-10-22 01:43:01,840 UTC INFO     utils.rest_client Response: {
+	"id": "2322350410",
+	"parent_id": null,
+	"order": 3,
+	"color": "charcoal",
+	"name": "project x",
+	"comment_count": 0,
+	"is_shared": false,
+	"is_favorite": false,
+	"is_inbox_project": false,
+	"is_team_inbox": false,
+	"url": "https://todoist.com/showProject?id=2322350410",
+	"view_style": "list"
+}
+
+2023-10-22 01:43:01,840 UTC DEBUG    builtins        Project id created: 2322350410
+2023-10-22 01:43:01,840 UTC DEBUG    builtins        HEADERS: {'Authorization': 'Bearer 3bb828df7836d71da0e9fdd090f6d0f66130044b'}
+2023-10-22 01:43:01,840 UTC DEBUG    builtins        URL: https://api.todoist.com/rest/v2/
+2023-10-22 01:43:01,841 UTC INFO     utils.rest_client Method Name: delete
+2023-10-22 01:43:01,841 UTC INFO     utils.rest_client Endpoint (URL): https://api.todoist.com/rest/v2/projects/2322350407
+2023-10-22 01:43:02,457 UTC INFO     utils.rest_client Status code: 204
+2023-10-22 01:43:02,457 UTC DEBUG    utils.rest_client Request: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer 3bb828df7836d71da0e9fdd090f6d0f66130044b', 'Cookie': 'tduser=v4.public.eyJ1c2VyX2lkIjogNDU2ODE1ODIsICJleHAiOiAiMjAyMy0xMS0wNVQwNTo0Mjo1OCswMDowMCJ95djH46qC--ZF-AoZ3M2MzXnOjaYqOB5oqnPgENNDGfPJhZOdkx9UAav6stubns4GbfmN2qtmp5Xc75B9JmAUCg; csrf=ee6a7c6e4c524af7990db5cbe5bbd19a', 'Content-Length': '0'}
+2023-10-22 01:43:02,457 UTC INFO     utils.rest_client Response: 
+2023-10-22 01:43:02,457 UTC INFO     builtins        Deleting project: 2322350407
+2023-10-22 01:43:02,457 UTC INFO     utils.rest_client Method Name: delete
+2023-10-22 01:43:02,458 UTC INFO     utils.rest_client Endpoint (URL): https://api.todoist.com/rest/v2/projects/2322350410
+2023-10-22 01:43:03,069 UTC INFO     utils.rest_client Status code: 204
+2023-10-22 01:43:03,069 UTC DEBUG    utils.rest_client Request: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer 3bb828df7836d71da0e9fdd090f6d0f66130044b', 'Cookie': 'tduser=v4.public.eyJ1c2VyX2lkIjogNDU2ODE1ODIsICJleHAiOiAiMjAyMy0xMS0wNVQwNTo0Mjo1OCswMDowMCJ95djH46qC--ZF-AoZ3M2MzXnOjaYqOB5oqnPgENNDGfPJhZOdkx9UAav6stubns4GbfmN2qtmp5Xc75B9JmAUCg; csrf=ee6a7c6e4c524af7990db5cbe5bbd19a', 'Content-Length': '0'}
+2023-10-22 01:43:03,069 UTC INFO     utils.rest_client Response: 
+2023-10-22 01:43:03,069 UTC INFO     builtins        Deleting project: 2322350410

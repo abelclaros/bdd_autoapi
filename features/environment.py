@@ -24,11 +24,15 @@ def before_all(context):
     context.headers = HEADERS
     context.project_list = []
     context.section_list = []
+    context.task_list = []
+    context.label_list = []
+    context.comment_list = []
     context.url = BASE_URL
     LOGGER.debug("Headers before feature: %s", context.headers)
     projects = get_all_projects(context)
     LOGGER.debug(projects)
     context.project_id_from_all = projects["body"][1]["id"]
+
 
 def before_feature(context, feature):
     context.feature_name = feature.name.lower()
@@ -52,6 +56,13 @@ def before_scenario(context, scenario):
         context.section_id = response["body"]["id"]
         LOGGER.debug("Section id created: %s", context.section_id)
         context.section_list.append(context.section_id)
+
+    if "task_id" in scenario.tags:
+
+        response = create_task(context=context, task_name="task x")
+        context.task_id = response["body"]["id"]
+        LOGGER.debug("Task id created: %s", context.task_id)
+        context.section_list.append(context.task_id)
 
 
 def after_scenario(context, scenario):
@@ -93,6 +104,16 @@ def create_section(context, project_id, section_name):
                                          data=body_section)
     return response
 
+
+def create_task(context, task_name):
+
+    body_section = {
+        "content": task_name
+    }
+    response = RestClient().send_request(method_name="post", session=context.session,
+                                         url=context.url+"tasks", headers=context.headers,
+                                         data=body_section)
+    return response
 
 def get_all_projects(context):
     response = RestClient().send_request(method_name="get", session=context.session,

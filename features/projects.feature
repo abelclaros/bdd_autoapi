@@ -21,6 +21,11 @@ Feature: Projects
 
     Given I set the base url and headers
     When I call to projects endpoint using "POST" method using the "name project" as parameter
+    """
+    {
+      "name": "Project TEST"
+    }
+    """
     Then I receive a 200 status code in response
 
   @project_id

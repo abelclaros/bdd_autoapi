@@ -1,0 +1,374 @@
+2023-10-21 20:20:56,867 UTC DEBUG    builtins        Headers before feature: {'Authorization': 'Bearer 3bb828df7836d71da0e9fdd090f6d0f66130044b'}
+2023-10-21 20:20:56,867 UTC INFO     utils.rest_client Method Name: get
+2023-10-21 20:20:56,867 UTC INFO     utils.rest_client Endpoint (URL): https://api.todoist.com/rest/v2/projects
+2023-10-21 20:20:58,304 UTC INFO     utils.rest_client Status code: 200
+2023-10-21 20:20:58,305 UTC DEBUG    utils.rest_client Request: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer 3bb828df7836d71da0e9fdd090f6d0f66130044b'}
+2023-10-21 20:20:58,305 UTC INFO     utils.rest_client Response: [
+	{
+		"id": "2319576038",
+		"parent_id": null,
+		"order": 0,
+		"color": "charcoal",
+		"name": "Inbox",
+		"comment_count": 0,
+		"is_shared": false,
+		"is_favorite": false,
+		"is_inbox_project": true,
+		"is_team_inbox": false,
+		"url": "https://todoist.com/showProject?id=2319576038",
+		"view_style": "list"
+	},
+	{
+		"id": "2322258579",
+		"parent_id": null,
+		"order": 1,
+		"color": "charcoal",
+		"name": "PROJECT 1",
+		"comment_count": 0,
+		"is_shared": false,
+		"is_favorite": false,
+		"is_inbox_project": false,
+		"is_team_inbox": false,
+		"url": "https://todoist.com/showProject?id=2322258579",
+		"view_style": "list"
+	}
+]
+
+2023-10-21 20:20:58,305 UTC DEBUG    builtins        {'body': [{'id': '2319576038', 'parent_id': None, 'order': 0, 'color': 'charcoal', 'name': 'Inbox', 'comment_count': 0, 'is_shared': False, 'is_favorite': False, 'is_inbox_project': True, 'is_team_inbox': False, 'url': 'https://todoist.com/showProject?id=2319576038', 'view_style': 'list'}, {'id': '2322258579', 'parent_id': None, 'order': 1, 'color': 'charcoal', 'name': 'PROJECT 1', 'comment_count': 0, 'is_shared': False, 'is_favorite': False, 'is_inbox_project': False, 'is_team_inbox': False, 'url': 'https://todoist.com/showProject?id=2322258579', 'view_style': 'list'}], 'headers': {'Content-Type': 'application/json', 'Content-Length': '626', 'Connection': 'keep-alive', 'Date': 'Sun, 22 Oct 2023 00:20:58 GMT', 'Access-Control-Allow-Credentials': 'false', 'Access-Control-Allow-Origin': '*', 'Referrer-Policy': 'strict-origin-when-cross-origin', 'Server': 'gunicorn', 'Set-Cookie': 'csrf=e0ed66caeaa94364a8dc0ffa10e341d6; Expires=Wed, 19-Oct-2033 00:20:57 GMT; Secure; Path=/; SameSite=None, tduser=v4.public.eyJ1c2VyX2lkIjogNDU2ODE1ODIsICJleHAiOiAiMjAyMy0xMS0wNVQwMDoyMDo1OCswMDowMCJ9f2BpujM_pRVHRFMR6UEaKfjnmM1OIxJOay1_kd6d1Dfc1fvszEcOtQcgS57xl5DiPMBZa3j8nVM2wGVl3iAtDA; Domain=.todoist.com; Expires=Sun, 05-Nov-2023 00:20:58 GMT; Max-Age=1209600; Secure; HttpOnly; Path=/', 'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload', 'Vary': 'Accept-Encoding', 'X-Cache': 'Miss from cloudfront', 'Via': '1.1 e571b92310bb378c03c128a8f3f2c69e.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'SCL51-P4', 'X-Amz-Cf-Id': 'aKNXYQL47-_kDMcWz6cMNMRVAY-g5Qc68jTyQOEtIZ2aTM45NZOUEw=='}, 'status': 200}
+2023-10-21 20:20:58,306 UTC DEBUG    builtins        Scenario tags: []
+2023-10-21 20:20:58,307 UTC DEBUG    builtins        HEADERS: {'Authorization': 'Bearer 3bb828df7836d71da0e9fdd090f6d0f66130044b'}
+2023-10-21 20:20:58,307 UTC DEBUG    builtins        URL: https://api.todoist.com/rest/v2/
+2023-10-21 20:20:58,308 UTC INFO     utils.rest_client Method Name: get
+2023-10-21 20:20:58,308 UTC INFO     utils.rest_client Endpoint (URL): https://api.todoist.com/rest/v2/projects
+2023-10-21 20:20:59,215 UTC INFO     utils.rest_client Status code: 200
+2023-10-21 20:20:59,215 UTC DEBUG    utils.rest_client Request: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer 3bb828df7836d71da0e9fdd090f6d0f66130044b', 'Cookie': 'tduser=v4.public.eyJ1c2VyX2lkIjogNDU2ODE1ODIsICJleHAiOiAiMjAyMy0xMS0wNVQwMDoyMDo1OCswMDowMCJ9f2BpujM_pRVHRFMR6UEaKfjnmM1OIxJOay1_kd6d1Dfc1fvszEcOtQcgS57xl5DiPMBZa3j8nVM2wGVl3iAtDA; csrf=e0ed66caeaa94364a8dc0ffa10e341d6'}
+2023-10-21 20:20:59,216 UTC INFO     utils.rest_client Response: [
+	{
+		"id": "2319576038",
+		"parent_id": null,
+		"order": 0,
+		"color": "charcoal",
+		"name": "Inbox",
+		"comment_count": 0,
+		"is_shared": false,
+		"is_favorite": false,
+		"is_inbox_project": true,
+		"is_team_inbox": false,
+		"url": "https://todoist.com/showProject?id=2319576038",
+		"view_style": "list"
+	},
+	{
+		"id": "2322258579",
+		"parent_id": null,
+		"order": 1,
+		"color": "charcoal",
+		"name": "PROJECT 1",
+		"comment_count": 0,
+		"is_shared": false,
+		"is_favorite": false,
+		"is_inbox_project": false,
+		"is_team_inbox": false,
+		"url": "https://todoist.com/showProject?id=2322258579",
+		"view_style": "list"
+	}
+]
+
+2023-10-21 20:20:59,217 UTC DEBUG    builtins        Status code from response: 200
+2023-10-21 20:20:59,217 UTC DEBUG    builtins        Status code param: <class 'int'>
+2023-10-21 20:20:59,218 UTC DEBUG    builtins        Status code response: <class 'int'>
+2023-10-21 20:20:59,218 UTC DEBUG    builtins        Scenario tags: ['project_id']
+2023-10-21 20:20:59,218 UTC INFO     utils.rest_client Method Name: post
+2023-10-21 20:20:59,218 UTC INFO     utils.rest_client Endpoint (URL): https://api.todoist.com/rest/v2/projects
+2023-10-21 20:21:00,241 UTC INFO     utils.rest_client Status code: 200
+2023-10-21 20:21:00,242 UTC DEBUG    utils.rest_client Request: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer 3bb828df7836d71da0e9fdd090f6d0f66130044b', 'Cookie': 'tduser=v4.public.eyJ1c2VyX2lkIjogNDU2ODE1ODIsICJleHAiOiAiMjAyMy0xMS0wNVQwMDoyMDo1OCswMDowMCJ9f2BpujM_pRVHRFMR6UEaKfjnmM1OIxJOay1_kd6d1Dfc1fvszEcOtQcgS57xl5DiPMBZa3j8nVM2wGVl3iAtDA; csrf=e0ed66caeaa94364a8dc0ffa10e341d6', 'Content-Length': '14', 'Content-Type': 'application/x-www-form-urlencoded'}
+2023-10-21 20:21:00,242 UTC INFO     utils.rest_client Response: {
+	"id": "2322344641",
+	"parent_id": null,
+	"order": 2,
+	"color": "charcoal",
+	"name": "project x",
+	"comment_count": 0,
+	"is_shared": false,
+	"is_favorite": false,
+	"is_inbox_project": false,
+	"is_team_inbox": false,
+	"url": "https://todoist.com/showProject?id=2322344641",
+	"view_style": "list"
+}
+
+2023-10-21 20:21:00,242 UTC DEBUG    builtins        Project id created: 2322344641
+2023-10-21 20:21:00,243 UTC DEBUG    builtins        HEADERS: {'Authorization': 'Bearer 3bb828df7836d71da0e9fdd090f6d0f66130044b'}
+2023-10-21 20:21:00,244 UTC DEBUG    builtins        URL: https://api.todoist.com/rest/v2/
+2023-10-21 20:21:00,244 UTC INFO     utils.rest_client Method Name: get
+2023-10-21 20:21:00,244 UTC INFO     utils.rest_client Endpoint (URL): https://api.todoist.com/rest/v2/projects
+2023-10-21 20:21:01,133 UTC INFO     utils.rest_client Status code: 200
+2023-10-21 20:21:01,133 UTC DEBUG    utils.rest_client Request: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer 3bb828df7836d71da0e9fdd090f6d0f66130044b', 'Cookie': 'tduser=v4.public.eyJ1c2VyX2lkIjogNDU2ODE1ODIsICJleHAiOiAiMjAyMy0xMS0wNVQwMDoyMDo1OCswMDowMCJ9f2BpujM_pRVHRFMR6UEaKfjnmM1OIxJOay1_kd6d1Dfc1fvszEcOtQcgS57xl5DiPMBZa3j8nVM2wGVl3iAtDA; csrf=e0ed66caeaa94364a8dc0ffa10e341d6'}
+2023-10-21 20:21:01,134 UTC INFO     utils.rest_client Response: [
+	{
+		"id": "2319576038",
+		"parent_id": null,
+		"order": 0,
+		"color": "charcoal",
+		"name": "Inbox",
+		"comment_count": 0,
+		"is_shared": false,
+		"is_favorite": false,
+		"is_inbox_project": true,
+		"is_team_inbox": false,
+		"url": "https://todoist.com/showProject?id=2319576038",
+		"view_style": "list"
+	},
+	{
+		"id": "2322258579",
+		"parent_id": null,
+		"order": 1,
+		"color": "charcoal",
+		"name": "PROJECT 1",
+		"comment_count": 0,
+		"is_shared": false,
+		"is_favorite": false,
+		"is_inbox_project": false,
+		"is_team_inbox": false,
+		"url": "https://todoist.com/showProject?id=2322258579",
+		"view_style": "list"
+	},
+	{
+		"id": "2322344641",
+		"parent_id": null,
+		"order": 2,
+		"color": "charcoal",
+		"name": "project x",
+		"comment_count": 0,
+		"is_shared": false,
+		"is_favorite": false,
+		"is_inbox_project": false,
+		"is_team_inbox": false,
+		"url": "https://todoist.com/showProject?id=2322344641",
+		"view_style": "list"
+	}
+]
+
+2023-10-21 20:21:01,134 UTC DEBUG    builtins        Status code from response: 200
+2023-10-21 20:21:01,135 UTC DEBUG    builtins        Status code param: <class 'int'>
+2023-10-21 20:21:01,135 UTC DEBUG    builtins        Status code response: <class 'int'>
+2023-10-21 20:21:01,135 UTC DEBUG    builtins        Scenario tags: []
+2023-10-21 20:21:01,136 UTC DEBUG    builtins        HEADERS: {'Authorization': 'Bearer 3bb828df7836d71da0e9fdd090f6d0f66130044b'}
+2023-10-21 20:21:01,136 UTC DEBUG    builtins        URL: https://api.todoist.com/rest/v2/
+2023-10-21 20:21:01,137 UTC INFO     utils.rest_client Method Name: post
+2023-10-21 20:21:01,137 UTC INFO     utils.rest_client Endpoint (URL): https://api.todoist.com/rest/v2/projects
+2023-10-21 20:21:01,965 UTC INFO     utils.rest_client Status code: 200
+2023-10-21 20:21:01,965 UTC DEBUG    utils.rest_client Request: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer 3bb828df7836d71da0e9fdd090f6d0f66130044b', 'Cookie': 'tduser=v4.public.eyJ1c2VyX2lkIjogNDU2ODE1ODIsICJleHAiOiAiMjAyMy0xMS0wNVQwMDoyMDo1OCswMDowMCJ9f2BpujM_pRVHRFMR6UEaKfjnmM1OIxJOay1_kd6d1Dfc1fvszEcOtQcgS57xl5DiPMBZa3j8nVM2wGVl3iAtDA; csrf=e0ed66caeaa94364a8dc0ffa10e341d6', 'Content-Length': '14', 'Content-Type': 'application/x-www-form-urlencoded'}
+2023-10-21 20:21:01,966 UTC INFO     utils.rest_client Response: {
+	"id": "2322344643",
+	"parent_id": null,
+	"order": 3,
+	"color": "charcoal",
+	"name": "Project 1",
+	"comment_count": 0,
+	"is_shared": false,
+	"is_favorite": false,
+	"is_inbox_project": false,
+	"is_team_inbox": false,
+	"url": "https://todoist.com/showProject?id=2322344643",
+	"view_style": "list"
+}
+
+2023-10-21 20:21:01,966 UTC DEBUG    builtins        Status code from response: 200
+2023-10-21 20:21:01,966 UTC DEBUG    builtins        Status code param: <class 'int'>
+2023-10-21 20:21:01,966 UTC DEBUG    builtins        Status code response: <class 'int'>
+2023-10-21 20:21:01,967 UTC DEBUG    builtins        Scenario tags: ['project_id']
+2023-10-21 20:21:01,967 UTC INFO     utils.rest_client Method Name: post
+2023-10-21 20:21:01,967 UTC INFO     utils.rest_client Endpoint (URL): https://api.todoist.com/rest/v2/projects
+2023-10-21 20:21:02,998 UTC INFO     utils.rest_client Status code: 200
+2023-10-21 20:21:02,998 UTC DEBUG    utils.rest_client Request: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer 3bb828df7836d71da0e9fdd090f6d0f66130044b', 'Cookie': 'tduser=v4.public.eyJ1c2VyX2lkIjogNDU2ODE1ODIsICJleHAiOiAiMjAyMy0xMS0wNVQwMDoyMDo1OCswMDowMCJ9f2BpujM_pRVHRFMR6UEaKfjnmM1OIxJOay1_kd6d1Dfc1fvszEcOtQcgS57xl5DiPMBZa3j8nVM2wGVl3iAtDA; csrf=e0ed66caeaa94364a8dc0ffa10e341d6', 'Content-Length': '14', 'Content-Type': 'application/x-www-form-urlencoded'}
+2023-10-21 20:21:02,998 UTC INFO     utils.rest_client Response: {
+	"id": "2322344644",
+	"parent_id": null,
+	"order": 4,
+	"color": "charcoal",
+	"name": "project x",
+	"comment_count": 0,
+	"is_shared": false,
+	"is_favorite": false,
+	"is_inbox_project": false,
+	"is_team_inbox": false,
+	"url": "https://todoist.com/showProject?id=2322344644",
+	"view_style": "list"
+}
+
+2023-10-21 20:21:02,999 UTC DEBUG    builtins        Project id created: 2322344644
+2023-10-21 20:21:02,999 UTC DEBUG    builtins        HEADERS: {'Authorization': 'Bearer 3bb828df7836d71da0e9fdd090f6d0f66130044b'}
+2023-10-21 20:21:02,999 UTC DEBUG    builtins        URL: https://api.todoist.com/rest/v2/
+2023-10-21 20:21:03,000 UTC INFO     utils.rest_client Method Name: delete
+2023-10-21 20:21:03,000 UTC INFO     utils.rest_client Endpoint (URL): https://api.todoist.com/rest/v2/projects/2322344644
+2023-10-21 20:21:03,783 UTC INFO     utils.rest_client Status code: 204
+2023-10-21 20:21:03,783 UTC DEBUG    utils.rest_client Request: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer 3bb828df7836d71da0e9fdd090f6d0f66130044b', 'Cookie': 'tduser=v4.public.eyJ1c2VyX2lkIjogNDU2ODE1ODIsICJleHAiOiAiMjAyMy0xMS0wNVQwMDoyMDo1OCswMDowMCJ9f2BpujM_pRVHRFMR6UEaKfjnmM1OIxJOay1_kd6d1Dfc1fvszEcOtQcgS57xl5DiPMBZa3j8nVM2wGVl3iAtDA; csrf=e0ed66caeaa94364a8dc0ffa10e341d6', 'Content-Length': '0'}
+2023-10-21 20:21:03,783 UTC INFO     utils.rest_client Response: 
+2023-10-21 20:21:03,783 UTC DEBUG    builtins        Status code from response: 204
+2023-10-21 20:21:03,784 UTC DEBUG    builtins        Status code param: <class 'int'>
+2023-10-21 20:21:03,784 UTC DEBUG    builtins        Status code response: <class 'int'>
+2023-10-21 20:21:03,784 UTC DEBUG    builtins        Scenario tags: ['project_id', 'wip']
+2023-10-21 20:21:03,784 UTC INFO     utils.rest_client Method Name: post
+2023-10-21 20:21:03,784 UTC INFO     utils.rest_client Endpoint (URL): https://api.todoist.com/rest/v2/projects
+2023-10-21 20:21:04,641 UTC INFO     utils.rest_client Status code: 200
+2023-10-21 20:21:04,641 UTC DEBUG    utils.rest_client Request: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer 3bb828df7836d71da0e9fdd090f6d0f66130044b', 'Cookie': 'tduser=v4.public.eyJ1c2VyX2lkIjogNDU2ODE1ODIsICJleHAiOiAiMjAyMy0xMS0wNVQwMDoyMDo1OCswMDowMCJ9f2BpujM_pRVHRFMR6UEaKfjnmM1OIxJOay1_kd6d1Dfc1fvszEcOtQcgS57xl5DiPMBZa3j8nVM2wGVl3iAtDA; csrf=e0ed66caeaa94364a8dc0ffa10e341d6', 'Content-Length': '14', 'Content-Type': 'application/x-www-form-urlencoded'}
+2023-10-21 20:21:04,641 UTC INFO     utils.rest_client Response: {
+	"id": "2322344646",
+	"parent_id": null,
+	"order": 4,
+	"color": "charcoal",
+	"name": "project x",
+	"comment_count": 0,
+	"is_shared": false,
+	"is_favorite": false,
+	"is_inbox_project": false,
+	"is_team_inbox": false,
+	"url": "https://todoist.com/showProject?id=2322344646",
+	"view_style": "list"
+}
+
+2023-10-21 20:21:04,642 UTC DEBUG    builtins        Project id created: 2322344646
+2023-10-21 20:21:04,642 UTC DEBUG    builtins        HEADERS: {'Authorization': 'Bearer 3bb828df7836d71da0e9fdd090f6d0f66130044b'}
+2023-10-21 20:21:04,642 UTC DEBUG    builtins        URL: https://api.todoist.com/rest/v2/
+2023-10-21 20:21:04,643 UTC DEBUG    builtins        JSON: {
+  "name": "Project updated",
+  "color": "red"
+}
+2023-10-21 20:21:04,643 UTC INFO     utils.rest_client Method Name: post
+2023-10-21 20:21:04,643 UTC INFO     utils.rest_client Endpoint (URL): https://api.todoist.com/rest/v2/projects/2322344646
+2023-10-21 20:21:05,462 UTC INFO     utils.rest_client Status code: 200
+2023-10-21 20:21:05,462 UTC DEBUG    utils.rest_client Request: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer 3bb828df7836d71da0e9fdd090f6d0f66130044b', 'Cookie': 'tduser=v4.public.eyJ1c2VyX2lkIjogNDU2ODE1ODIsICJleHAiOiAiMjAyMy0xMS0wNVQwMDoyMDo1OCswMDowMCJ9f2BpujM_pRVHRFMR6UEaKfjnmM1OIxJOay1_kd6d1Dfc1fvszEcOtQcgS57xl5DiPMBZa3j8nVM2wGVl3iAtDA; csrf=e0ed66caeaa94364a8dc0ffa10e341d6', 'Content-Length': '52', 'Content-Type': 'application/x-www-form-urlencoded'}
+2023-10-21 20:21:05,463 UTC INFO     utils.rest_client Response: {
+	"id": "2322344646",
+	"parent_id": null,
+	"order": 4,
+	"color": "red",
+	"name": "Project updated",
+	"comment_count": 0,
+	"is_shared": false,
+	"is_favorite": false,
+	"is_inbox_project": false,
+	"is_team_inbox": false,
+	"url": "https://todoist.com/showProject?id=2322344646",
+	"view_style": "list"
+}
+
+2023-10-21 20:21:05,463 UTC DEBUG    builtins        Status code from response: 200
+2023-10-21 20:21:05,464 UTC DEBUG    builtins        Status code param: <class 'int'>
+2023-10-21 20:21:05,464 UTC DEBUG    builtins        Status code response: <class 'int'>
+2023-10-21 20:21:05,464 UTC DEBUG    builtins        Scenario tags: []
+2023-10-21 20:21:05,465 UTC DEBUG    builtins        HEADERS: {'Authorization': 'Bearer 3bb828df7836d71da0e9fdd090f6d0f66130044b'}
+2023-10-21 20:21:05,465 UTC DEBUG    builtins        URL: https://api.todoist.com/rest/v2/
+2023-10-21 20:21:05,466 UTC INFO     utils.rest_client Method Name: get
+2023-10-21 20:21:05,466 UTC INFO     utils.rest_client Endpoint (URL): https://api.todoist.com/rest/v2/sections
+2023-10-21 20:21:06,070 UTC INFO     utils.rest_client Status code: 200
+2023-10-21 20:21:06,071 UTC DEBUG    utils.rest_client Request: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer 3bb828df7836d71da0e9fdd090f6d0f66130044b', 'Cookie': 'tduser=v4.public.eyJ1c2VyX2lkIjogNDU2ODE1ODIsICJleHAiOiAiMjAyMy0xMS0wNVQwMDoyMDo1OCswMDowMCJ9f2BpujM_pRVHRFMR6UEaKfjnmM1OIxJOay1_kd6d1Dfc1fvszEcOtQcgS57xl5DiPMBZa3j8nVM2wGVl3iAtDA; csrf=e0ed66caeaa94364a8dc0ffa10e341d6'}
+2023-10-21 20:21:06,071 UTC INFO     utils.rest_client Response: [
+	{
+		"id": "136923058",
+		"project_id": "2319576038",
+		"order": 2,
+		"name": "UPDATED SECTION"
+	}
+]
+
+2023-10-21 20:21:06,072 UTC DEBUG    builtins        Status code from response: 200
+2023-10-21 20:21:06,072 UTC DEBUG    builtins        Status code param: <class 'int'>
+2023-10-21 20:21:06,072 UTC DEBUG    builtins        Status code response: <class 'int'>
+2023-10-21 20:21:06,072 UTC DEBUG    builtins        Scenario tags: ['project_id']
+2023-10-21 20:21:06,073 UTC INFO     utils.rest_client Method Name: post
+2023-10-21 20:21:06,073 UTC INFO     utils.rest_client Endpoint (URL): https://api.todoist.com/rest/v2/projects
+2023-10-21 20:21:07,567 UTC INFO     utils.rest_client Status code: 200
+2023-10-21 20:21:07,567 UTC DEBUG    utils.rest_client Request: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer 3bb828df7836d71da0e9fdd090f6d0f66130044b', 'Cookie': 'tduser=v4.public.eyJ1c2VyX2lkIjogNDU2ODE1ODIsICJleHAiOiAiMjAyMy0xMS0wNVQwMDoyMDo1OCswMDowMCJ9f2BpujM_pRVHRFMR6UEaKfjnmM1OIxJOay1_kd6d1Dfc1fvszEcOtQcgS57xl5DiPMBZa3j8nVM2wGVl3iAtDA; csrf=e0ed66caeaa94364a8dc0ffa10e341d6', 'Content-Length': '14', 'Content-Type': 'application/x-www-form-urlencoded'}
+2023-10-21 20:21:07,567 UTC INFO     utils.rest_client Response: {
+	"id": "2322344649",
+	"parent_id": null,
+	"order": 5,
+	"color": "charcoal",
+	"name": "project x",
+	"comment_count": 0,
+	"is_shared": false,
+	"is_favorite": false,
+	"is_inbox_project": false,
+	"is_team_inbox": false,
+	"url": "https://todoist.com/showProject?id=2322344649",
+	"view_style": "list"
+}
+
+2023-10-21 20:21:07,567 UTC DEBUG    builtins        Project id created: 2322344649
+2023-10-21 20:21:07,569 UTC DEBUG    builtins        HEADERS: {'Authorization': 'Bearer 3bb828df7836d71da0e9fdd090f6d0f66130044b'}
+2023-10-21 20:21:07,569 UTC DEBUG    builtins        URL: https://api.todoist.com/rest/v2/
+2023-10-21 20:21:07,570 UTC DEBUG    builtins        JSON: {
+  "project_id": "project_id",
+  "name": "Section created"
+}
+2023-10-21 20:21:07,570 UTC INFO     utils.rest_client Method Name: post
+2023-10-21 20:21:07,571 UTC INFO     utils.rest_client Endpoint (URL): https://api.todoist.com/rest/v2/sections
+2023-10-21 20:21:10,070 UTC INFO     utils.rest_client Status code: 200
+2023-10-21 20:21:10,070 UTC DEBUG    utils.rest_client Request: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer 3bb828df7836d71da0e9fdd090f6d0f66130044b', 'Cookie': 'tduser=v4.public.eyJ1c2VyX2lkIjogNDU2ODE1ODIsICJleHAiOiAiMjAyMy0xMS0wNVQwMDoyMDo1OCswMDowMCJ9f2BpujM_pRVHRFMR6UEaKfjnmM1OIxJOay1_kd6d1Dfc1fvszEcOtQcgS57xl5DiPMBZa3j8nVM2wGVl3iAtDA; csrf=e0ed66caeaa94364a8dc0ffa10e341d6', 'Content-Length': '42', 'Content-Type': 'application/x-www-form-urlencoded'}
+2023-10-21 20:21:10,071 UTC INFO     utils.rest_client Response: {
+	"id": "137529658",
+	"project_id": "2322344649",
+	"order": 1,
+	"name": "Section created"
+}
+
+2023-10-21 20:21:10,072 UTC DEBUG    builtins        Status code from response: 200
+2023-10-21 20:21:10,072 UTC DEBUG    builtins        Status code param: <class 'int'>
+2023-10-21 20:21:10,072 UTC DEBUG    builtins        Status code response: <class 'int'>
+2023-10-21 20:21:10,072 UTC DEBUG    builtins        Scenario tags: ['section_id']
+2023-10-21 20:21:10,072 UTC INFO     utils.rest_client Method Name: post
+2023-10-21 20:21:10,073 UTC INFO     utils.rest_client Endpoint (URL): https://api.todoist.com/rest/v2/sections
+2023-10-21 20:21:12,970 UTC INFO     utils.rest_client Status code: 200
+2023-10-21 20:21:12,970 UTC DEBUG    utils.rest_client Request: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer 3bb828df7836d71da0e9fdd090f6d0f66130044b', 'Cookie': 'tduser=v4.public.eyJ1c2VyX2lkIjogNDU2ODE1ODIsICJleHAiOiAiMjAyMy0xMS0wNVQwMDoyMDo1OCswMDowMCJ9f2BpujM_pRVHRFMR6UEaKfjnmM1OIxJOay1_kd6d1Dfc1fvszEcOtQcgS57xl5DiPMBZa3j8nVM2wGVl3iAtDA; csrf=e0ed66caeaa94364a8dc0ffa10e341d6', 'Content-Length': '36', 'Content-Type': 'application/x-www-form-urlencoded'}
+2023-10-21 20:21:12,971 UTC INFO     utils.rest_client Response: {
+	"id": "137529661",
+	"project_id": "2322258579",
+	"order": 1,
+	"name": "section x"
+}
+
+2023-10-21 20:21:12,971 UTC DEBUG    builtins        Section id created: 137529661
+2023-10-21 20:21:12,972 UTC DEBUG    builtins        HEADERS: {'Authorization': 'Bearer 3bb828df7836d71da0e9fdd090f6d0f66130044b'}
+2023-10-21 20:21:12,972 UTC DEBUG    builtins        URL: https://api.todoist.com/rest/v2/
+2023-10-21 20:21:12,972 UTC INFO     utils.rest_client Method Name: delete
+2023-10-21 20:21:12,972 UTC INFO     utils.rest_client Endpoint (URL): https://api.todoist.com/rest/v2/sections/137529661
+2023-10-21 20:21:14,014 UTC INFO     utils.rest_client Status code: 204
+2023-10-21 20:21:14,014 UTC DEBUG    utils.rest_client Request: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer 3bb828df7836d71da0e9fdd090f6d0f66130044b', 'Cookie': 'tduser=v4.public.eyJ1c2VyX2lkIjogNDU2ODE1ODIsICJleHAiOiAiMjAyMy0xMS0wNVQwMDoyMDo1OCswMDowMCJ9f2BpujM_pRVHRFMR6UEaKfjnmM1OIxJOay1_kd6d1Dfc1fvszEcOtQcgS57xl5DiPMBZa3j8nVM2wGVl3iAtDA; csrf=e0ed66caeaa94364a8dc0ffa10e341d6', 'Content-Length': '0'}
+2023-10-21 20:21:14,015 UTC INFO     utils.rest_client Response: 
+2023-10-21 20:21:14,016 UTC INFO     utils.rest_client Method Name: delete
+2023-10-21 20:21:14,016 UTC INFO     utils.rest_client Endpoint (URL): https://api.todoist.com/rest/v2/projects/2322344641
+2023-10-21 20:21:16,583 UTC INFO     utils.rest_client Status code: 204
+2023-10-21 20:21:16,584 UTC DEBUG    utils.rest_client Request: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer 3bb828df7836d71da0e9fdd090f6d0f66130044b', 'Cookie': 'tduser=v4.public.eyJ1c2VyX2lkIjogNDU2ODE1ODIsICJleHAiOiAiMjAyMy0xMS0wNVQwMDoyMDo1OCswMDowMCJ9f2BpujM_pRVHRFMR6UEaKfjnmM1OIxJOay1_kd6d1Dfc1fvszEcOtQcgS57xl5DiPMBZa3j8nVM2wGVl3iAtDA; csrf=e0ed66caeaa94364a8dc0ffa10e341d6', 'Content-Length': '0'}
+2023-10-21 20:21:16,584 UTC INFO     utils.rest_client Response: 
+2023-10-21 20:21:16,584 UTC INFO     builtins        Deleting project: 2322344641
+2023-10-21 20:21:16,585 UTC INFO     utils.rest_client Method Name: delete
+2023-10-21 20:21:16,585 UTC INFO     utils.rest_client Endpoint (URL): https://api.todoist.com/rest/v2/projects/2322344643
+2023-10-21 20:21:18,785 UTC INFO     utils.rest_client Status code: 204
+2023-10-21 20:21:18,785 UTC DEBUG    utils.rest_client Request: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer 3bb828df7836d71da0e9fdd090f6d0f66130044b', 'Cookie': 'tduser=v4.public.eyJ1c2VyX2lkIjogNDU2ODE1ODIsICJleHAiOiAiMjAyMy0xMS0wNVQwMDoyMDo1OCswMDowMCJ9f2BpujM_pRVHRFMR6UEaKfjnmM1OIxJOay1_kd6d1Dfc1fvszEcOtQcgS57xl5DiPMBZa3j8nVM2wGVl3iAtDA; csrf=e0ed66caeaa94364a8dc0ffa10e341d6', 'Content-Length': '0'}
+2023-10-21 20:21:18,785 UTC INFO     utils.rest_client Response: 
+2023-10-21 20:21:18,786 UTC INFO     builtins        Deleting project: 2322344643
+2023-10-21 20:21:18,786 UTC INFO     utils.rest_client Method Name: delete
+2023-10-21 20:21:18,786 UTC INFO     utils.rest_client Endpoint (URL): https://api.todoist.com/rest/v2/projects/2322344644
+2023-10-21 20:21:22,158 UTC INFO     utils.rest_client Status code: 204
+2023-10-21 20:21:22,159 UTC DEBUG    utils.rest_client Request: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer 3bb828df7836d71da0e9fdd090f6d0f66130044b', 'Cookie': 'tduser=v4.public.eyJ1c2VyX2lkIjogNDU2ODE1ODIsICJleHAiOiAiMjAyMy0xMS0wNVQwMDoyMDo1OCswMDowMCJ9f2BpujM_pRVHRFMR6UEaKfjnmM1OIxJOay1_kd6d1Dfc1fvszEcOtQcgS57xl5DiPMBZa3j8nVM2wGVl3iAtDA; csrf=e0ed66caeaa94364a8dc0ffa10e341d6', 'Content-Length': '0'}
+2023-10-21 20:21:22,159 UTC INFO     utils.rest_client Response: 
+2023-10-21 20:21:22,159 UTC INFO     builtins        Deleting project: 2322344644
+2023-10-21 20:21:22,159 UTC INFO     utils.rest_client Method Name: delete
+2023-10-21 20:21:22,159 UTC INFO     utils.rest_client Endpoint (URL): https://api.todoist.com/rest/v2/projects/2322344646
+2023-10-21 20:21:27,759 UTC INFO     utils.rest_client Status code: 204
+2023-10-21 20:21:27,759 UTC DEBUG    utils.rest_client Request: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer 3bb828df7836d71da0e9fdd090f6d0f66130044b', 'Cookie': 'tduser=v4.public.eyJ1c2VyX2lkIjogNDU2ODE1ODIsICJleHAiOiAiMjAyMy0xMS0wNVQwMDoyMDo1OCswMDowMCJ9f2BpujM_pRVHRFMR6UEaKfjnmM1OIxJOay1_kd6d1Dfc1fvszEcOtQcgS57xl5DiPMBZa3j8nVM2wGVl3iAtDA; csrf=e0ed66caeaa94364a8dc0ffa10e341d6', 'Content-Length': '0'}
+2023-10-21 20:21:27,760 UTC INFO     utils.rest_client Response: 
+2023-10-21 20:21:27,760 UTC INFO     builtins        Deleting project: 2322344646
+2023-10-21 20:21:27,761 UTC INFO     utils.rest_client Method Name: delete
+2023-10-21 20:21:27,761 UTC INFO     utils.rest_client Endpoint (URL): https://api.todoist.com/rest/v2/projects/2322344646
+2023-10-21 20:21:29,615 UTC INFO     utils.rest_client Status code: 204
+2023-10-21 20:21:29,615 UTC DEBUG    utils.rest_client Request: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer 3bb828df7836d71da0e9fdd090f6d0f66130044b', 'Cookie': 'tduser=v4.public.eyJ1c2VyX2lkIjogNDU2ODE1ODIsICJleHAiOiAiMjAyMy0xMS0wNVQwMDoyMDo1OCswMDowMCJ9f2BpujM_pRVHRFMR6UEaKfjnmM1OIxJOay1_kd6d1Dfc1fvszEcOtQcgS57xl5DiPMBZa3j8nVM2wGVl3iAtDA; csrf=e0ed66caeaa94364a8dc0ffa10e341d6', 'Content-Length': '0'}
+2023-10-21 20:21:29,615 UTC INFO     utils.rest_client Response: 
+2023-10-21 20:21:29,616 UTC INFO     builtins        Deleting project: 2322344646
+2023-10-21 20:21:29,616 UTC INFO     utils.rest_client Method Name: delete
+2023-10-21 20:21:29,616 UTC INFO     utils.rest_client Endpoint (URL): https://api.todoist.com/rest/v2/projects/2322344649
+2023-10-21 20:21:30,523 UTC INFO     utils.rest_client Status code: 204
+2023-10-21 20:21:30,524 UTC DEBUG    utils.rest_client Request: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer 3bb828df7836d71da0e9fdd090f6d0f66130044b', 'Cookie': 'tduser=v4.public.eyJ1c2VyX2lkIjogNDU2ODE1ODIsICJleHAiOiAiMjAyMy0xMS0wNVQwMDoyMDo1OCswMDowMCJ9f2BpujM_pRVHRFMR6UEaKfjnmM1OIxJOay1_kd6d1Dfc1fvszEcOtQcgS57xl5DiPMBZa3j8nVM2wGVl3iAtDA; csrf=e0ed66caeaa94364a8dc0ffa10e341d6', 'Content-Length': '0'}
+2023-10-21 20:21:30,524 UTC INFO     utils.rest_client Response: 
+2023-10-21 20:21:30,524 UTC INFO     builtins        Deleting project: 2322344649
