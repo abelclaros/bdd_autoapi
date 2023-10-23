@@ -69,13 +69,29 @@ def before_scenario(context, scenario):
         LOGGER.debug("Comment id created: %s", context.comment_id)
         context.section_list.append(context.comment_id)
 
+    if "label_id" in scenario.tags:
+        response = create_label(context=context, label_name="LABEL TEST")
+        context.label_id = response["body"]["id"]
+        LOGGER.debug("Label id created: %s", context.label_id)
+        context.label_list.append(context.label_id)
+
 
 def after_scenario(context, scenario):
     print("after scenario")
+    for label in context.label_list:
+        url = f"{context.url}labels/{label}"
+        RestClient().send_request(method_name="delete", session=context.session,
+                                  url=url, headers=HEADERS)
+        LOGGER.info("Deleting label: %s", label)
 
 
 def after_feature(context, feature):
     print("After feature")
+    for label in context.label_list:
+        url = f"{context.url}labels/{label}"
+        RestClient().send_request(method_name="delete", session=context.session,
+                                  url=url, headers=HEADERS)
+        LOGGER.info("Deleting label: %s", label)
 
 
 def after_all(context):
@@ -85,6 +101,8 @@ def after_all(context):
         RestClient().send_request(method_name="delete", session=context.session,
                                   url=url, headers=HEADERS)
         LOGGER.info("Deleting project: %s", project)
+
+
 
 
 def create_project(context, name_project):
@@ -128,6 +146,16 @@ def create_comment(context, project_id):
     #     json.dump(data, json_file, indent=4)
     response = RestClient().send_request(method_name="post", session=context.session,
                                          url=context.url + "comments", headers=context.headers,
+                                         data=data)
+    return response
+
+
+def create_label(context, label_name):
+    data = {
+        "name": label_name
+    }
+    response = RestClient().send_request(method_name="post", session=context.session,
+                                         url=context.url + "labels", headers=context.headers,
                                          data=data)
     return response
 
