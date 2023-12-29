@@ -1,0 +1,49 @@
+2023-10-23 11:16:05,943 UTC DEBUG    builtins        Headers before feature: {'Authorization': 'Bearer 3bb828df7836d71da0e9fdd090f6d0f66130044b'}
+2023-10-23 11:16:05,943 UTC INFO     utils.rest_client Method Name: get
+2023-10-23 11:16:05,943 UTC INFO     utils.rest_client Endpoint (URL): https://api.todoist.com/rest/v2/projects
+2023-10-23 11:16:07,256 UTC INFO     utils.rest_client Status code: 200
+2023-10-23 11:16:07,256 UTC DEBUG    utils.rest_client Request: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer 3bb828df7836d71da0e9fdd090f6d0f66130044b'}
+2023-10-23 11:16:07,256 UTC INFO     utils.rest_client Response: [
+	{
+		"id": "2319576038",
+		"parent_id": null,
+		"order": 0,
+		"color": "charcoal",
+		"name": "Inbox",
+		"comment_count": 0,
+		"is_shared": false,
+		"is_favorite": false,
+		"is_inbox_project": true,
+		"is_team_inbox": false,
+		"url": "https://todoist.com/showProject?id=2319576038",
+		"view_style": "list"
+	},
+	{
+		"id": "2322258579",
+		"parent_id": null,
+		"order": 1,
+		"color": "charcoal",
+		"name": "PROJECT 1",
+		"comment_count": 0,
+		"is_shared": false,
+		"is_favorite": false,
+		"is_inbox_project": false,
+		"is_team_inbox": false,
+		"url": "https://todoist.com/showProject?id=2322258579",
+		"view_style": "list"
+	}
+]
+
+2023-10-23 11:16:07,256 UTC DEBUG    builtins        {'body': [{'id': '2319576038', 'parent_id': None, 'order': 0, 'color': 'charcoal', 'name': 'Inbox', 'comment_count': 0, 'is_shared': False, 'is_favorite': False, 'is_inbox_project': True, 'is_team_inbox': False, 'url': 'https://todoist.com/showProject?id=2319576038', 'view_style': 'list'}, {'id': '2322258579', 'parent_id': None, 'order': 1, 'color': 'charcoal', 'name': 'PROJECT 1', 'comment_count': 0, 'is_shared': False, 'is_favorite': False, 'is_inbox_project': False, 'is_team_inbox': False, 'url': 'https://todoist.com/showProject?id=2322258579', 'view_style': 'list'}], 'headers': {'Content-Type': 'application/json', 'Content-Length': '626', 'Connection': 'keep-alive', 'Date': 'Mon, 23 Oct 2023 15:16:07 GMT', 'Access-Control-Allow-Credentials': 'false', 'Access-Control-Allow-Origin': '*', 'Referrer-Policy': 'strict-origin-when-cross-origin', 'Server': 'gunicorn', 'Set-Cookie': 'csrf=7225bda4e43a4611ad88390bc8e30236; Expires=Thu, 20-Oct-2033 15:16:06 GMT; Secure; Path=/; SameSite=None, tduser=v4.public.eyJ1c2VyX2lkIjogNDU2ODE1ODIsICJleHAiOiAiMjAyMy0xMS0wNlQxNToxNjowNyswMDowMCJ9QMmnAiiQxBvU2xDbZtY04PgLP8vgqATnS1kvjq12M4NuaKtrPftsYA14G3hOUfsIWw2ViDvqrkc2IpsnQbl2Dw; Domain=.todoist.com; Expires=Mon, 06-Nov-2023 15:16:07 GMT; Max-Age=1209600; Secure; HttpOnly; Path=/', 'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload', 'Vary': 'Accept-Encoding', 'X-Cache': 'Miss from cloudfront', 'Via': '1.1 58830509aaa39326281f1a32f0d7f954.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'LIM50-P1', 'X-Amz-Cf-Id': 'ft7mQ1_o7DwbHHVW323tcz4xWVjaHppzqvBH8vaWIZuxGdeBN-_-GQ=='}, 'status': 200}
+2023-10-23 11:16:07,257 UTC DEBUG    builtins        Scenario tags: ['label_id']
+2023-10-23 11:16:07,258 UTC DEBUG    builtins        Scenario tags: []
+2023-10-23 11:16:07,259 UTC DEBUG    builtins        HEADERS: {'Authorization': 'Bearer 3bb828df7836d71da0e9fdd090f6d0f66130044b'}
+2023-10-23 11:16:07,259 UTC DEBUG    builtins        URL: https://api.todoist.com/rest/v2/
+2023-10-23 11:16:07,259 UTC DEBUG    builtins        JSON: {
+  "name": "NEW LABEL"
+}
+2023-10-23 11:16:07,260 UTC DEBUG    builtins        Dictionary created: {'name': 'NEW LABEL'}
+2023-10-23 11:16:07,260 UTC INFO     utils.rest_client Method Name: post
+2023-10-23 11:16:07,260 UTC INFO     utils.rest_client Endpoint (URL): https://api.todoist.com/rest/v2/labels
+2023-10-23 11:16:10,982 UTC ERROR    utils.rest_client HTTP error: 400 Client Error: Bad Request for url: https://api.todoist.com/rest/v2/labels
+2023-10-23 11:16:10,982 UTC DEBUG    builtins        Response: {'body': {'msg': 'Label with this name already exists'}, 'headers': {'Content-Type': 'text/plain; charset=utf-8', 'Content-Length': '35', 'Connection': 'keep-alive', 'Date': 'Mon, 23 Oct 2023 15:16:10 GMT', 'Access-Control-Allow-Credentials': 'false', 'Access-Control-Allow-Origin': '*', 'Cache-Control': 'no-cache', 'Referrer-Policy': 'strict-origin-when-cross-origin', 'Server': 'gunicorn', 'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload', 'Vary': 'Accept-Encoding', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 58830509aaa39326281f1a32f0d7f954.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'LIM50-P1', 'X-Amz-Cf-Id': '_bk1_0uagIv9q57F7Cus8hUEix4-CXAD57PYaAE_57NwZWfMTxuOsQ=='}, 'status': 400}
